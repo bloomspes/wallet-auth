@@ -1,5 +1,9 @@
 import dotenv from 'dotenv';
-import { initializeApp, firebase } from "firebase/app";
+import { initializeApp } from "firebase/app";
+import { getAuth } from "firebase/auth";
+import { getFirestore } from "firebase/firestore";
+import { getDatabase } from "firebase/database";
+
 
 dotenv.config();
 
@@ -15,6 +19,8 @@ const firebaseConfig = {
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-var CLIENT_ID = 'bloomspes@gmail.com';
+export const authService = getAuth(app);
+export const dbService = getFirestore();
+export const realtimeDBservice = getDatabase();
 
-export default firebase.initializeApp(firebaseConfig);
+export default app;

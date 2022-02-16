@@ -1,16 +1,13 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import config from './config';
+import config, { authService } from './config';
+import AuthService from './service';
 
-function App() {
-    console.log(config)
-    
-    return (
-        <>
-            <h1>Welcome</h1>
-            <p>Hello, world!</p>
-        </>
-    );
-}
+const authService = new AuthService();
 
-export default App;
+ReactDOM.render(
+    <React.StrictMode>
+        <App authService={authService} />
+    </React.StrictMode>,
+    document.getElementById('root')
+);
