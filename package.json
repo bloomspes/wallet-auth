@@ -1,0 +1,44 @@
+{
+  "name": "wallet-auth",
+  "version": "1.0.0",
+  "description": "NFTBank.ai Backend OAuth 구현",
+  "main": "index.js",
+  "scripts": {
+    "start": "serve",
+    "lint": "eslint --fix --ext .js,.jsx,.ts,.tsx .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bloomspes/wallet-auth.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bloomspes/wallet-auth/issues"
+  },
+  "homepage": "https://github.com/bloomspes/wallet-auth#readme",
+  "devDependencies": {
+    "@babel/core": "^7.17.4",
+    "@babel/preset-react": "^7.16.7",
+    "babel-loader": "^8.2.3",
+    "eslint": "^8.9.0",
+    "eslint-config-airbnb": "^19.0.4",
+    "eslint-plugin-import": "^2.25.4",
+    "eslint-plugin-jsx-a11y": "^6.5.1",
+    "eslint-plugin-react": "^7.28.0",
+    "eslint-plugin-react-hooks": "^4.3.0",
+    "html-webpack-plugin": "^5.5.0",
+    "webpack": "^5.69.0",
+    "webpack-cli": "^4.9.2",
+    "webpack-dev-server": "^4.7.4"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "firebase": "^9.6.6",
+    "firebaseui": "^6.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2"
+  }
+}
